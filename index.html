@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="utility.css" />
+    <title>Typing Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Type Writer</h2>
+      <small class="main">Type the following: </small>
+      <h1 id="word"></h1>
+
+      <input
+        type="text"
+        id="text"
+        autocomplete="off"
+        placeholder="Type the word here"
+        autofocus
+      />
+
+      <p class="time-container">Time Left: <span id="time">20s</span></p>
+      <p class="score-container">Score: <span id="score">0</span></p>
+      <div id="end-game-container" class="end-game-container"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
