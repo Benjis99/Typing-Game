@@ -60,10 +60,19 @@ function updateTime() {
   time--;
   timeE1.innerHTML = time + "s";
 
+  if (time < 4) {
+    timeClock();
+    timeE1.innerHTML = time + "s";
+  }
+
   if (time == 0) {
     clearInterval(timeInterval);
     gameOver();
   }
+}
+
+function timeClock() {
+  document.getElementById("time").style.color = "red";
 }
 
 function gameOver() {
